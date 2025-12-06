@@ -1,5 +1,6 @@
-# **Smart Bluetooth Maglev Globe**
-## **The Interactive Levitation-Based 3D Infographic**
+<img width="2783" height="670" alt="1210167345" src="https://github.com/user-attachments/assets/9142035f-fffe-474d-923c-6eadfb2ecb5a" />
+
+## **The Interactive Levitation-Based Wireless 3D Infographic**
 
 A levitating globe that actually listens to you.
 Not metaphorically. Literally.
@@ -10,6 +11,10 @@ You pick a country on the app ->
 The globe realigns itself ->
 RGB lighting matches the flag ->
 And the whole thing floats in mid-air like it’s acting for a sci-fi movie.
+
+
+
+https://github.com/user-attachments/assets/267d2f81-c088-4885-9614-61dbd61e7121
 
 
 
@@ -71,7 +76,7 @@ Designed in Figma, fully implemented in Flutter.
 
 
 
-## **The Math (Short Version)**
+## **The Math (oversimplified)**
 
 You want the servo to move X degrees.
 But the servo only speaks “PWM power” and “time.”
@@ -88,7 +93,7 @@ The result: accurate, repeatable positioning from a motor that wasn’t designed
 
 
 
-## **Build Log (Condensed)**
+## **Build Log**
 
 * Crafted a wooden stand with internal compartments and a sliding lid
 * Sculpted and painted a thermocol globe
