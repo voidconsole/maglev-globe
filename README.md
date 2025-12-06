@@ -108,7 +108,7 @@ The result: accurate, repeatable positioning from a motor that wasn’t designed
 
 # **Installation & Setup**
 
-### **1. Upload the Firmware (globe.ino)**
-### **2. Install the App (globe.apk)**
-### **3. Assemble components (hc-05 and servo to the arduino uno)**
-### **4. Connect via wifi and enjoy**
+#### **1. Upload the Firmware (globe.ino)**
+#### **2. Install the App (globe.apk)**
+#### **3. Assemble components (hc-05 and servo to the arduino uno)**
+#### **4. Connect via bluetooth and enjoy**
