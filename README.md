@@ -5,7 +5,7 @@
 This project combines magnetic levitation, servo-driven rotation mapping, custom geolocation math, Bluetooth control, and an Android app built end-to-end to create an interactive 3D infographic for the G20 nations (or, honestly, whatever you want to point at on the planet).
 
 
-### **What I actually built**
+**What I actually built**
 
 * A magnetically levitating globe using a dipole pairing (one inside the globe, one above it) plus a bottom nylon support
 * A continuous-rotation servo hidden inside the stand
@@ -15,61 +15,12 @@ This project combines magnetic levitation, servo-driven rotation mapping, custom
 
 https://github.com/user-attachments/assets/267d2f81-c088-4885-9614-61dbd61e7121
 
+The globe stays suspended using a dipole magnetic pairing with a nylon support at the bottom for stability. I tucked a 360 degree servo and an RGB setup inside a custom wooden stand with hidden compartments. Everything runs on an Arduino Uno and connects to a Flutter app via an HC-05 Bluetooth module.
 
+One of the biggest engineering hurdles was the fact that continuous rotation servos do not provide position feedback. To fix this, I attached a small flap to the servo shaft that hits a fixed beam once per rotation. By measuring the time between those clicks, I can calculate the RPM and convert that into degrees per second. I used this timing along with a calibration step to make sure the globe spins exactly to the correct longitude for any country.
 
+I designed the interface in Figma and built the app in Flutter to send minimal command bytes for low latency. When you tap a country in the app, the globe rotates to the right spot and the RGB LEDs change to match the colors of that country's flag.
 
----
-
-### **The servo problem and the hack**
-
-Continuous-rotation servos don’t know their own position, which makes them terrible for accuracy. I got around that by attaching a tiny flap to the servo shaft so it taps a fixed beam once per full rotation. That click gives me RPM. From there:
-
-* RPM -> degrees per second
-* Degrees per second -> timing for each longitude
-* One Bluetooth-based calibration to set “zero”
-* Then some geolocation math to make sure each country is actually facing forward
-
-It’s a dumb hack on paper but ridiculously effective in practice.
-
-### **Electronics setup**
-
-* Arduino Uno
-* HC-05 Bluetooth module
-* 360° servo
-* RGB LED
-  Simple parts, but pushed hard.
-
-### **About the app**
-
-I designed the UI in Figma and built the whole thing in Flutter. It:
-
-* Connects to the HC-05
-* Shows live status
-* Lets me control direction/speed
-* Displays custom flag assets
-* Sends minimal command bytes for near-instant reactions
-  Tap a country -> globe rotates -> lighting changes.
-
-### **Build process**
-
-* Made a wooden stand with hidden compartments
-* Sculpted and painted the thermocol globe
-* Installed the magnetic system
-* Built the servo mount and arch
-* Fought servo drift for way too long
-* Invented the “RPM via sound tap” method
-* Wrote the Arduino firmware
-* Built the Flutter app
-* Mapped every country’s longitude
-* Synced RGB colors with flags
-* Final assembly and fine-tuning
-
-### **Setup now**
-
-* Upload the firmware
-* Install the APK
-* Connect the HC-05 and servo to the Arduino
-* Pair your phone
-* Use the app
+The build process involved sculpting the thermocol globe, writing the Arduino firmware, and fighting servo drift for a long time until the rotation was precise. The final result is a fully synced, data-driven globe that reacts instantly to the app.
 
 And that’s it, a levitating, app-controlled, data-driven globe that moves on command and glows with each country’s colors.
