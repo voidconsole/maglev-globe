@@ -24,3 +24,21 @@ I designed the interface in Figma and built the app in Flutter to send minimal c
 The build process involved sculpting the thermocol globe, writing the Arduino firmware, and fighting servo drift for a long time until the rotation was precise. The final result is a fully synced, data-driven globe that reacts instantly to the app.
 
 And that’s it, a levitating, app-controlled, data-driven globe that moves on command and glows with each country’s colors.
+
+**Why**
+- To explore the possibilities of the bluetooth enabled robotics
+- To try mobile connectivity with an arduino uno
+- To present as a exibition artifact
+- To blend aesthetics with functionality
+
+
+**How to**
+- Take a thermocol ball and insert a bar magnet horizontally inside it. A string should be tied to the center of the magnet and it should be drown out of the the globe perpendicular to the magnets, downwards, and tie it to the base plate.
+- Another bar magnet to be attached to a servo and the servo should be mounted on the stand in such a way that the bar magnet of the servo is parallel to the bar magnet hidden inside the globe. 
+- The above system will make the globe suspended in the air as the bar magnets will attract each other but the string is just short enough that it doesn't let them fully snap.
+- Since we're using bar magnets, the servo magnet and the globe magnet will be in sync in rotation, the polar end maintaining their attraction.
+- That should complete the maglev part. A rgb led can be fixed under the globe or as preferred.
+- The rest of the electronics can be wired according to the schematics and hidden inside a box beneath the base.
+- The globe.ino code should be uploaded to the arduino.
+- The globe.apk should be downloaded on an Android phone, and when the arduino and circuitry is powered on and active, one should connect that android phone to the circuit's bluetooth.
+- A successful connection will be shown in the app and from then on all could be controlled via the phone.
