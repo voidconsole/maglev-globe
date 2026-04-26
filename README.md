@@ -42,3 +42,19 @@ And that’s it, a levitating, app-controlled, data-driven globe that moves on c
 - The globe.ino code should be uploaded to the arduino.
 - The globe.apk should be downloaded on an Android phone, and when the arduino and circuitry is powered on and active, one should connect that android phone to the circuit's bluetooth.
 - A successful connection will be shown in the app and from then on all could be controlled via the phone.
+
+<img width="969" height="797" alt="image" src="https://github.com/user-attachments/assets/341237a2-5516-4cd7-93a8-0ff4917fe2a4" />
+<img width="867" height="823" alt="image" src="https://github.com/user-attachments/assets/c1fe46ef-7233-4184-9be2-a5b13fb8191f" />
+<img width="818" height="871" alt="image" src="https://github.com/user-attachments/assets/28785b87-469c-46ae-b0d3-b9d17796b684" />
+
+|Name|Description|Amount| Cost|Link|Running Total|
+|----|-----------|------|-----|----|-------------|
+|Arduino Uno|Execute code and handle components|1x|15$|https://a.co/d/bmDaQzY|15$|
+|HC-05 Module|Connect to phone app via bluetooth|1x|12$|https://a.co/d/aNaK21Q|27$|
+|Servo 360|Control globe spin|1x|11$|https://a.co/d/8QtKBlF|38$|
+|Magnets|Crux of maglev|12x disks of neodymium|10$|https://a.co/d/8QtKBlF|48$|
+|Plywood|To craft the stand and holder|50cm^2|8$|https://a.co/d/0e6iqHY|56$|
+|Stryoball|To carve the globe|5cm radius ball of styrofoam|8$|https://a.co/d/0e6iqHY|64$|
+|RGB LED|For cool effects|1x small diode|7$|https://a.co/d/2UdZyUL|71$|
+|Nylon String|Tension against magnet|10cm|7$|https://a.co/d/aRDm3VX|78$|
+|Decor (Optional)|Paper, cotton, paint, pins|As preferred|10$?|As preferred|88$|
